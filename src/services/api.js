@@ -1,7 +1,8 @@
 import axios from "axios";
 
-const SERVER_BASE_URL = "http://localhost:8080";
-const API_BASE_URL = "http://localhost:8080/api";
+const SERVER_BASE_URL = process.env.NEXT_PUBLIC_SERVER_URL;
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
 const TOKEN_KEY = "portfolio_auth_token";
 
 const API = axios.create({
